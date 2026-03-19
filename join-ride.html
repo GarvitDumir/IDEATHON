@@ -34,7 +34,7 @@
     overflow-x: hidden;
   }
  
-  /* ── BG ── */
+  
   .page-bg {
     position: fixed; inset: 0; z-index: 0; pointer-events: none;
     background:
@@ -42,7 +42,7 @@
       radial-gradient(ellipse 50% 40% at 90% 70%, rgba(0,212,170,0.07) 0%, transparent 60%);
   }
  
-  /* ── NAV ── */
+  
   nav {
     position: sticky; top: 0; z-index: 100;
     display: flex; align-items: center; justify-content: space-between;
@@ -90,7 +90,7 @@
   }
   .user-name { font-size: 0.82rem; font-weight: 600; }
  
-  /* ── LAYOUT ── */
+  
   .page-wrap {
     position: relative; z-index: 1;
     max-width: 1200px; margin: 0 auto;
@@ -101,7 +101,7 @@
     align-items: start;
   }
  
-  /* ── PAGE HEADER ── */
+  
   .page-header {
     grid-column: 1 / -1;
     display: flex; align-items: flex-start; justify-content: space-between;
@@ -124,7 +124,7 @@
   }
   .live-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--teal); animation: blink 1s ease infinite; }
  
-  /* ── FILTERS ── */
+  
   .filters-bar {
     grid-column: 1 / -1;
     display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center;
@@ -178,7 +178,7 @@
   .fchip.active { background: rgba(34,197,94,0.15); border-color: rgba(34,197,94,0.4); color: var(--accent); }
   .fchip.teal.active { background: rgba(74,222,128,0.12); border-color: rgba(74,222,128,0.35); color: var(--teal); }
  
-  /* ── RIDE LIST ── */
+  
   .ride-list {
     display: flex; flex-direction: column; gap: 1.1rem;
   }
@@ -202,7 +202,7 @@
     display: flex; gap: 1.25rem;
   }
  
-  /* route visual */
+  
   .route-visual {
     display: flex; flex-direction: column; align-items: center;
     padding-top: 4px; gap: 0;
@@ -241,7 +241,7 @@
   .badge-purple { background: rgba(139,92,246,0.12); color: var(--purple); border: 1px solid rgba(139,92,246,0.2); }
   .badge-gray { background: rgba(255,255,255,0.06); color: var(--muted); border: 1px solid var(--border); }
  
-  /* meta strip */
+  
   .ride-meta-strip {
     display: flex; gap: 1.25rem; flex-wrap: wrap;
     padding: 0.9rem 1.5rem;
@@ -255,7 +255,7 @@
   .meta-pill strong { color: var(--text); font-weight: 600; }
   .meta-ico { font-size: 0.9rem; }
  
-  /* seats bar */
+  
   .seats-visual { display: flex; gap: 4px; align-items: center; }
   .seat-box {
     width: 14px; height: 14px; border-radius: 3px;
@@ -265,7 +265,6 @@
   }
   .seat-box.taken { background: var(--bg3); border-color: var(--border); }
  
-  /* driver strip */
   .driver-strip {
     display: flex; align-items: center; justify-content: space-between;
     padding: 0.85rem 1.5rem;
@@ -282,7 +281,7 @@
   .driver-meta { font-size: 0.73rem; color: var(--muted); margin-top: 1px; }
   .driver-rating { display: flex; align-items: center; gap: 3px; font-size: 0.78rem; color: var(--accent2); font-weight: 600; }
  
-  /* action row */
+  
   .ride-actions {
     display: flex; gap: 0.65rem;
     padding: 0.85rem 1.5rem 1.35rem;
@@ -309,12 +308,12 @@
   }
   .btn-sos:hover { background: rgba(255,71,87,0.2); }
  
-  /* empty state */
+  
   .empty { text-align: center; padding: 3rem 1rem; color: var(--muted); }
   .empty-ico { font-size: 3rem; margin-bottom: 1rem; }
   .empty h3 { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
  
-  /* ── SIDEBAR ── */
+ 
   .sidebar { display: flex; flex-direction: column; gap: 1.25rem; }
  
   .sidebar-card {
@@ -328,7 +327,7 @@
   }
   .sidebar-title span { font-size: 1rem; }
  
-  /* map placeholder */
+  
   .map-placeholder {
     background: var(--bg3); border-radius: 12px; height: 160px;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
@@ -351,7 +350,6 @@
   .route-from-to { font-size: 0.82rem; font-weight: 500; }
   .route-count { font-size: 0.72rem; background: rgba(74,222,128,0.1); color: var(--teal); padding: 2px 8px; border-radius: 50px; font-weight: 700; }
  
-  /* my rides */
   .my-ride-item {
     display: flex; align-items: center; gap: 10px;
     padding: 0.65rem; background: var(--bg3); border-radius: 10px;
@@ -364,14 +362,14 @@
   .my-ride-time { font-size: 0.72rem; color: var(--muted); margin-top: 1px; }
   .my-ride-status { font-size: 0.68rem; font-weight: 700; }
  
-  /* safety tips */
+
   .tip-item { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 0.75rem; }
   .tip-item:last-child { margin-bottom: 0; }
   .tip-ico { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
   .tip-text { font-size: 0.8rem; color: var(--muted); line-height: 1.55; }
   .tip-text strong { color: var(--text); }
  
-  /* sos banner */
+ 
   .sos-banner {
     background: rgba(255,71,87,0.08); border: 1px solid rgba(255,71,87,0.2);
     border-radius: 14px; padding: 1.1rem 1.25rem;
@@ -387,7 +385,7 @@
   }
   .sos-banner-btn:hover { opacity: 0.88; }
  
-  /* ── MODAL ── */
+  
   .modal-overlay {
     position: fixed; inset: 0; z-index: 200;
     background: rgba(0,0,0,0.7); backdrop-filter: blur(6px);
@@ -485,7 +483,7 @@
   }
   .btn-cancel:hover { background: var(--card2); color: var(--text); }
  
-  /* success modal state */
+  
   .join-success {
     text-align: center; padding: 1.5rem 0;
   }
@@ -516,7 +514,7 @@
   }
   .btn-done:hover { opacity: 0.9; }
  
-  /* ── ANIMATIONS ── */
+  
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: translateY(0); }
@@ -527,7 +525,7 @@
   }
   @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
  
-  /* stagger cards */
+  
   .ride-card:nth-child(1) { animation-delay: 0.08s; }
   .ride-card:nth-child(2) { animation-delay: 0.15s; }
   .ride-card:nth-child(3) { animation-delay: 0.22s; }
@@ -552,7 +550,7 @@
  
 <div class="page-bg"></div>
  
-<!-- NAV -->
+
 <nav>
   <div class="nav-left">
     <a class="back-btn" href="index.html">← Back</a>
@@ -567,10 +565,9 @@
   </div>
 </nav>
  
-<!-- PAGE -->
 <div class="page-wrap">
  
-  <!-- HEADER -->
+  
   <div class="page-header">
     <div>
       <h1>🚗 Find a Ride</h1>
@@ -579,7 +576,7 @@
     <div class="live-badge"><div class="live-dot"></div> 6 rides live now</div>
   </div>
  
-  <!-- FILTERS -->
+  
   <div class="filters-bar">
     <div class="search-wrap">
       <span class="search-icon">🔍</span>
@@ -617,10 +614,10 @@
     <div class="fchip" onclick="toggleFChip(this)">Today only</div>
   </div>
  
-  <!-- RIDE CARDS LIST -->
+  
   <div class="ride-list" id="ride-list">
  
-    <!-- CARD 1 -->
+   
     <div class="ride-card urgent">
       <div class="ride-card-top">
         <div class="route-visual">
@@ -677,7 +674,7 @@
       </div>
     </div>
  
-    <!-- CARD 2 -->
+    
     <div class="ride-card">
       <div class="ride-card-top">
         <div class="route-visual">
@@ -733,7 +730,7 @@
       </div>
     </div>
  
-    <!-- CARD 3 -->
+    
     <div class="ride-card">
       <div class="ride-card-top">
         <div class="route-visual">
@@ -790,7 +787,7 @@
       </div>
     </div>
  
-    <!-- CARD 4 -->
+
     <div class="ride-card">
       <div class="ride-card-top">
         <div class="route-visual">
@@ -847,7 +844,7 @@
       </div>
     </div>
  
-    <!-- CARD 5 -->
+  
     <div class="ride-card">
       <div class="ride-card-top">
         <div class="route-visual">
@@ -903,7 +900,7 @@
       </div>
     </div>
  
-    <!-- CARD 6: FULL -->
+    
     <div class="ride-card full">
       <div class="ride-card-top">
         <div class="route-visual">
@@ -952,12 +949,12 @@
       </div>
     </div>
  
-  </div><!-- /ride-list -->
+  </div>
  
-  <!-- SIDEBAR -->
+  
   <div class="sidebar">
  
-    <!-- Map placeholder -->
+    
     <div class="sidebar-card" style="animation-delay:0.1s">
       <div class="sidebar-title"><span>🗺</span> Route Overview</div>
       <div class="map-placeholder">
@@ -988,7 +985,7 @@
       </div>
     </div>
  
-    <!-- My rides -->
+    
     <div class="sidebar-card" style="animation-delay:0.18s">
       <div class="sidebar-title"><span>👤</span> My Rides</div>
       <div class="my-ride-item">
@@ -1012,7 +1009,7 @@
       </div>
     </div>
  
-    <!-- Safety tips -->
+  
     <div class="sidebar-card" style="animation-delay:0.26s">
       <div class="sidebar-title"><span>✅</span> Safety Reminders</div>
       <div class="tip-item">
@@ -1033,18 +1030,18 @@
       </div>
     </div>
  
-    <!-- SOS -->
+   
     <div class="sos-banner">
       <div class="sos-banner-title">🚨 Emergency SOS</div>
       <p>If you feel unsafe during a ride, press the SOS button on your ride card to instantly alert your emergency contacts.</p>
       <button class="sos-banner-btn">Test SOS Alert</button>
     </div>
  
-  </div><!-- /sidebar -->
+  </div>
  
-</div><!-- /page-wrap -->
+</div>
  
-<!-- JOIN MODAL -->
+
 <div class="modal-overlay" id="modal-overlay" onclick="closeOnBg(event)">
   <div class="modal" id="modal">
     <div id="modal-confirm-view">
@@ -1112,7 +1109,7 @@
       </div>
     </div>
  
-    <!-- SUCCESS STATE -->
+    
     <div id="modal-success-view" style="display:none;padding:2rem 1.75rem 2rem">
       <div class="join-success">
         <div class="success-ring">🎉</div>
@@ -1233,7 +1230,7 @@
   }
  
   function filterRides() {
-    // visual only — would hook into real data
+   
   }
  
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
